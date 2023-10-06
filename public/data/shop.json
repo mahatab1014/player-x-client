@@ -1,0 +1,110 @@
+[
+  {
+    "id": 123456,
+    "service_slug": "fantasy-quest",
+    "title": "Fantasy Quest",
+    "short_description": "Embark on an epic adventure in a magical world.",
+    "long_description": "Join a realm of wizards and warriors, where you'll battle mythical creatures, uncover ancient secrets, explore mysterious dungeons, cast powerful spells, and forge alliances in this immersive fantasy game that will transport you to a world of magic and wonder.",
+    "price": 19.99,
+    "image": "https://example.com/game1.jpg"
+  },
+  {
+    "id": 234567,
+    "service_slug": "space-odyssey",
+    "title": "Space Odyssey",
+    "short_description": "Conquer the galaxy in a futuristic space epic.",
+    "long_description": "Pilot advanced spacecraft, build interstellar empires, wage epic space battles, explore the vastness of the cosmos, and become a legendary space commander in this massive multiplayer online game set in a richly detailed and immersive sci-fi universe.",
+    "price": 24.99,
+    "image": "https://example.com/game2.jpg"
+  },
+  {
+    "id": 345678,
+    "service_slug": "survival-island",
+    "title": "Survival Island",
+    "short_description": "Stranded on a deserted island, can you survive?",
+    "long_description": "Test your survival skills as you navigate through a treacherous island filled with wild animals, hidden dangers, and the constant struggle for resources. Team up with others or go solo in this challenging adventure that will push you to your limits.",
+    "price": 14.99,
+    "image": "https://example.com/game3.jpg"
+  },
+  {
+    "id": 456789,
+    "service_slug": "cybernetic-warfare",
+    "title": "Cybernetic Warfare",
+    "short_description": "Engage in futuristic battles in a cyberpunk world.",
+    "long_description": "Enter a dystopian future where cybernetic enhancements and high-tech weaponry rule the battlefield. Join factions, hack into systems, and engage in intense multiplayer battles in this gritty cyberpunk game that will test your skills and strategy.",
+    "price": 29.99,
+    "image": "https://example.com/game4.jpg"
+  },
+  {
+    "id": 567890,
+    "service_slug": "medieval-conquest",
+    "title": "Medieval Conquest",
+    "short_description": "Build kingdoms and wage wars in a medieval world.",
+    "long_description": "Lead armies into epic battles, construct majestic castles, expand your medieval kingdom, and prove your tactical prowess in this strategy and warfare game set in a beautifully crafted medieval world filled with challenges and opportunities.",
+    "price": 22.99,
+    "image": "https://example.com/game5.jpg"
+  },
+  {
+    "id": 678901,
+    "service_slug": "racing-revolution",
+    "title": "Racing Revolution",
+    "short_description": "Race against the best in high-speed competition.",
+    "long_description": "Experience heart-pounding races on tracks around the world. Customize and upgrade your cars, compete in thrilling multiplayer races, and become the ultimate racing champion in this adrenaline-pumping racing game that will satisfy your need for speed.",
+    "price": 17.99,
+    "image": "https://example.com/game6.jpg"
+  },
+  {
+    "id": 789012,
+    "service_slug": "mystic-puzzle-quest",
+    "title": "Mystic Puzzle Quest",
+    "short_description": "Solve enigmatic puzzles in a mystical world.",
+    "long_description": "Enter a world of ancient mysteries, challenging puzzles, and mystical landscapes. Solve riddles, uncover hidden artifacts, and journey through a mesmerizing world in this puzzle-solving adventure game that will test your intellect and creativity.",
+    "price": 12.99,
+    "image": "https://example.com/game7.jpg"
+  },
+  {
+    "id": 890123,
+    "service_slug": "sci-fi-shooter",
+    "title": "Sci-Fi Shooter",
+    "short_description": "Battle alien forces in a futuristic sci-fi universe.",
+    "long_description": "Arm yourself with advanced weapons, engage in intense battles against extraterrestrial threats, and team up with other players to defend humanity in this action-packed sci-fi shooter that will immerse you in a high-stakes intergalactic conflict.",
+    "price": 27.99,
+    "image": "https://example.com/game8.jpg"
+  },
+  {
+    "id": 901234,
+    "service_slug": "wild-west-outlaws",
+    "title": "Wild West Outlaws",
+    "short_description": "Become an outlaw in the lawless Wild West.",
+    "long_description": "Rob banks, duel in the dusty streets, seek fortune, and survive shootouts in a gritty western adventure that will transport you to the lawless frontier. Form gangs, make your mark, and live the outlaw's life.",
+    "price": 19.99,
+    "image": "https://example.com/game9.jpg"
+  },
+  {
+    "id": 123345,
+    "service_slug": "fantasy-card-masters",
+    "title": "Fantasy Card Masters",
+    "short_description": "Collect and duel with mythical creatures in a card game.",
+    "long_description": "Build your deck, summon powerful creatures, and engage in strategic card battles in a fantasy realm. Challenge other players and rise through the ranks to become the ultimate card master in this card-collecting and battling adventure.",
+    "price": 14.99,
+    "image": "https://example.com/game10.jpg"
+  },
+  {
+    "id": 234456,
+    "service_slug": "zombie-apocalypse",
+    "title": "Zombie Apocalypse",
+    "short_description": "Survive the undead hordes in a post-apocalyptic world.",
+    "long_description": "Fight off waves of zombies, scavenge for supplies, and fortify your stronghold in a world overrun by the undead. Team up with survivors or go it alone in this harrowing survival game that will test your zombie-slaying skills and survival instincts.",
+    "price": 24.99,
+    "image": "https://example.com/game11.jpg"
+  },
+  {
+    "id": 345567,
+    "service_slug": "epic-space-exploration",
+    "title": "Epic Space Exploration",
+    "short_description": "Embark on a journey to explore the cosmos.",
+    "long_description": "Pilot your spacecraft, visit distant planets, unravel the mysteries of the universe, and collaborate with other space explorers in this epic space exploration game that will take you on a cosmic adventure through the vast reaches of space.",
+    "price": 29.99,
+    "image": "https://example.com/game12.jpg"
+  }
+]

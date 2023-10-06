@@ -1,0 +1,56 @@
+[
+  {
+    "_id": "1",
+    "_slug": "game-streaming-equipment",
+    "title": "High-End Game Streaming Gear",
+    "description": "Complete streaming setup for professional gamers.",
+    "long_description": "Upgrade your game streaming with this high-end equipment bundle. Includes a top-tier gaming PC, high-quality microphone, 4K webcam, and customizable LED lighting.",
+    "price": 1499.99,
+    "image": "/images/services/game-streaming-equipment.jpg"
+  },
+  {
+    "_id": "2",
+    "_slug": "game-events-tournaments",
+    "title": "Epic eSports Tournament",
+    "description": "Join the biggest eSports tournament of the year!",
+    "long_description": "Compete against the world's best gamers in this epic eSports tournament. Win huge cash prizes and recognition in the gaming community.",
+    "price": 49.99,
+    "image": "/images/services/game-events-tournaments.jpg"
+  },
+  {
+    "_id": "3",
+    "_slug": "game-testing-qa",
+    "title": "Quality Assurance Testing Services",
+    "description": "Ensure your game is bug-free with our testing services.",
+    "long_description": "Our experienced QA testers will thoroughly test your game to ensure it's free from bugs and glitches. Get detailed reports and suggestions for improvement.",
+    "price": 799.99,
+    "image": "/images/services/game-testing-qa.jpg"
+  },
+  {
+    "_id": "4",
+    "_slug": "game-development",
+    "title": "Custom Game Development",
+    "description": "Turn your gaming idea into a reality with our game development services.",
+    "long_description": "Our team of skilled game developers will work closely with you to bring your gaming vision to life. From concept to release, we've got you covered.",
+    "price": 9999.99,
+    "image": "/images/services/game-development.jpg"
+  },
+  {
+    "_id": "5",
+    "_slug": "game-music-sound-design",
+    "title": "Original Game Soundtrack Composition",
+    "description": "Enhance your game with a captivating original soundtrack.",
+    "long_description": "Elevate your game's atmosphere with a unique and immersive original soundtrack. Our talented composers will create music that perfectly complements your game.",
+    "price": 299.99,
+    "image": "/images/services/game-music-sound-design.jpg"
+  },
+  {
+    "_id": "6",
+    "_slug": "game-merchandise",
+    "title": "Limited Edition Game Merchandise",
+    "description": "Get exclusive game merchandise for hardcore fans.",
+    "long_description": "Show your love for your favorite games with our limited edition merchandise collection. From stylish apparel to collectible figurines, we've got something for every fan.",
+    "price": 69.99,
+    "image": "/images/services/game-merchandise.jpg"
+  }
+]
