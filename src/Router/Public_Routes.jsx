@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home";
 import Services from "../Pages/Services/Services";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Service from "../Pages/Services/Service";
+import GameDetails from "../Pages/GameDetails/GameDetails";
 
 const Public_Routes = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const Public_Routes = createBrowserRouter([
         path: "/service/:id",
         element: <Service />,
         loader: () => fetch("/data/services.json"),
+      },
+      {
+        path: "/game/:id",
+        element: <GameDetails />,
+        loader: () => fetch("/data/game.json"),
       },
       {
         path: "*",

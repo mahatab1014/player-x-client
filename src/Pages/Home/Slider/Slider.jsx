@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import "./styles.css";
 
 // import required modules
 import { Pagination, Autoplay } from "swiper/modules";
@@ -28,6 +27,7 @@ const Slider = () => {
           }}
           modules={[Pagination, Autoplay]}
           className="mySwiper"
+          style={{height: "70vh"}}
         >
           <SwiperSlide>
             <div className="relative">

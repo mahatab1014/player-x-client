@@ -1,0 +1,376 @@
+[
+  {
+    "_id": "1",
+    "_slug": "cyberpunk-2077",
+    "title": "Cyberpunk 2077",
+    "brief_description": "Explore a futuristic open world in this action-packed RPG. Uncover dark conspiracies and shape your destiny in the year 2077.",
+    "long_description": "Cyberpunk 2077 is an open-world action role-playing game set in the sprawling Night City, a megalopolis obsessed with power, glamour, and body modification. You play as V, a mercenary outlaw searching for immortality. The game offers a rich narrative experience, immersive world-building, and deep character customization. Your choices affect the story, making each playthrough unique. With breathtaking visuals, exciting combat, and a gripping storyline, Cyberpunk 2077 is a must-play for gamers.",
+    "game_price": 59.99,
+    "game_thumbnails": [
+      "/images/games/cyberpunk-2077-thumb1.jpg",
+      "/images/games/cyberpunk-2077-thumb2.jpg"
+    ],
+    "gameplay_video": "https://www.youtube.com/watch?v=8X2kIfS6fb8",
+    "game_info": {
+      "release_date": "December 10, 2020",
+      "publisher": "CD Projekt",
+      "developer": "CD Projekt Red",
+      "engine": "REDengine 4",
+      "platforms": ["PlayStation 4", "Xbox One", "PC"]
+    },
+    "reviews": [
+      {
+        "reviewer_name": "GamerX",
+        "reviewer_image": "/images/games/reviewer/gamerx-avatar.jpg",
+        "reviewer_title": "Gaming Guru",
+        "reviewer_description": "A thrilling adventure through Night City with jaw-dropping visuals and an engrossing story. Cyberpunk 2077 sets a new standard for open-world RPGs."
+      },
+      {
+        "reviewer_name": "TechGeek",
+        "reviewer_image": "/images/games/reviewer/techgeek-avatar.jpg",
+        "reviewer_title": "Tech Enthusiast",
+        "reviewer_description": "Cyberpunk 2077 pushes the boundaries of gaming technology, delivering an unforgettable experience in a visually stunning world."
+      }
+    ]
+  },
+  {
+    "_id": "2",
+    "_slug": "the-last-of-us-part-ii",
+    "title": "The Last of Us Part II",
+    "brief_description": "Survive in a post-apocalyptic world in this emotionally charged action-adventure. Witness Ellie's journey for revenge and redemption.",
+    "long_description": "The Last of Us Part II is a gripping action-adventure game that continues the story of Ellie, a young woman navigating a post-apocalyptic world. As you embark on a journey of revenge and redemption, you'll encounter intense combat, emotional storytelling, and stunningly detailed environments. With its compelling characters and morally complex choices, this game pushes the boundaries of interactive storytelling.",
+    "game_price": 49.99,
+    "game_thumbnails": [
+      "/images/games/last-of-us-2-thumb1.jpg",
+      "/images/games/last-of-us-2-thumb2.jpg"
+    ],
+    "gameplay_video": "https://www.youtube.com/watch?v=vhII1qlcZ4E",
+    "game_info": {
+      "release_date": "June 19, 2020",
+      "publisher": "Sony Interactive Entertainment",
+      "developer": "Naughty Dog",
+      "engine": "Naughty Dog Engine 2.0",
+      "platforms": ["PlayStation 4", "PlayStation 5"]
+    },
+    "reviews": [
+      {
+        "reviewer_name": "GamingMaster",
+        "reviewer_image": "/images/games/reviewer/gamingmaster-avatar.jpg",
+        "reviewer_title": "Master Gamer",
+        "reviewer_description": "The Last of Us Part II is a masterpiece that tugs at your heartstrings while delivering intense gameplay. Naughty Dog has outdone themselves."
+      },
+      {
+        "reviewer_name": "Storyteller99",
+        "reviewer_image": "/images/games/reviewer/storyteller99-avatar.jpg",
+        "reviewer_title": "Storytelling Enthusiast",
+        "reviewer_description": "This game's narrative depth and character development are unparalleled. A true work of art in the gaming world."
+      }
+    ]
+  },
+  {
+    "_id": "3",
+    "_slug": "elden-ring",
+    "title": "Elden Ring",
+    "brief_description": "Embark on a dark fantasy adventure in a world created by George R.R. Martin and FromSoftware. Face mythical creatures and uncover a captivating story.",
+    "long_description": "Elden Ring is a highly anticipated action RPG set in a dark fantasy world created by George R.R. Martin and developed by FromSoftware. In a vast open world filled with mythical creatures, you'll explore, battle, and uncover a rich narrative with deep lore. With challenging combat, breathtaking visuals, and an epic story, Elden Ring promises to be a gaming experience like no other.",
+    "game_price": 69.99,
+    "game_thumbnails": [
+      "/images/games/elden-ring-thumb1.jpg",
+      "/images/games/elden-ring-thumb2.jpg"
+    ],
+    "gameplay_video": "https://www.youtube.com/watch?v=AKXiKBnzpBQ",
+    "game_info": {
+      "release_date": "February 25, 2022",
+      "publisher": "Bandai Namco Entertainment",
+      "developer": "FromSoftware",
+      "engine": "FromSoftware Engine",
+      "platforms": ["PlayStation 5", "Xbox Series X/S", "PC"]
+    },
+    "reviews": [
+      {
+        "reviewer_name": "FantasyFanatic",
+        "reviewer_image": "/images/games/reviewer/fantasyfanatic-avatar.jpg",
+        "reviewer_title": "Fantasy Enthusiast",
+        "reviewer_description": "Elden Ring blends the genius of George R.R. Martin with FromSoftware's gameplay mastery. A dark fantasy masterpiece."
+      },
+      {
+        "reviewer_name": "ActionGamer",
+        "reviewer_image": "/images/games/reviewer/actiongamer-avatar.jpg",
+        "reviewer_title": "Action Gaming Pro",
+        "reviewer_description": "The combat in Elden Ring is both challenging and rewarding, making it a must-play for action RPG fans."
+      }
+    ]
+  },
+  {
+    "_id": "4",
+    "_slug": "resident-evil-village",
+    "title": "Resident Evil Village",
+    "brief_description": "Survive horrors in a remote village in this survival horror game. Face terrifying creatures and uncover dark secrets.",
+    "long_description": "Resident Evil Village continues the iconic survival horror series with an eerie and atmospheric journey. As Ethan Winters, you'll explore a mysterious village, encountering grotesque creatures and supernatural horrors. With stunning graphics and intense gameplay, this game offers a thrilling experience for fans of the genre.",
+    "game_price": 39.99,
+    "game_thumbnails": [
+      "/images/games/resident-evil-village-thumb1.jpg",
+      "/images/games/resident-evil-village-thumb2.jpg"
+    ],
+    "gameplay_video": "https://www.youtube.com/watch?v=tjfTxFzGh3Q",
+    "game_info": {
+      "release_date": "May 7, 2021",
+      "publisher": "Capcom",
+      "developer": "Capcom",
+      "engine": "RE Engine",
+      "platforms": ["PlayStation 5", "Xbox Series X/S", "PC"]
+    },
+    "reviews": [
+      {
+        "reviewer_name": "HorrorFan",
+        "reviewer_image": "/images/games/reviewer/horrorfan-avatar.jpg",
+        "reviewer_title": "Horror Aficionado",
+        "reviewer_description": "Resident Evil Village is a spine-tingling journey into terror. It's a must-play for horror enthusiasts."
+      },
+      {
+        "reviewer_name": "SurvivalExpert",
+        "reviewer_image": "/images/games/reviewer/survivalexpert-avatar.jpg",
+        "reviewer_title": "Survival Expert",
+        "reviewer_description": "The atmosphere and tension in Resident Evil Village are palpable. A fantastic addition to the series."
+      }
+    ]
+  },
+  {
+    "_id": "5",
+    "_slug": "horizon-forbidden-west",
+    "title": "Horizon Forbidden West",
+    "brief_description": "Explore a post-apocalyptic world inhabited by robotic creatures. Join Aloy on her quest to uncover the mysteries of the Forbidden West.",
+    "long_description": "Horizon Forbidden West is an action RPG that takes you to a stunning post-apocalyptic world where nature and machines collide. As Aloy, a skilled hunter, you'll embark on a journey to uncover the secrets of the Forbidden West. With breathtaking visuals, challenging battles, and a deep narrative, this game offers an unforgettable adventure.",
+    "game_price": 59.99,
+    "game_thumbnails": [
+      "/images/games/horizon-forbidden-west-thumb1.jpg",
+      "/images/games/horizon-forbidden-west-thumb2.jpg"
+    ],
+    "gameplay_video": "https://www.youtube.com/watch?v=Lq594XmpPBg",
+    "game_info": {
+      "release_date": "February 18, 2022",
+      "publisher": "Sony Interactive Entertainment",
+      "developer": "Guerrilla Games",
+      "engine": "Decima Engine",
+      "platforms": ["PlayStation 4", "PlayStation 5"]
+    },
+    "reviews": [
+      {
+        "reviewer_name": "NatureExplorer",
+        "reviewer_image": "/images/games/reviewer/natureexplorer-avatar.jpg",
+        "reviewer_title": "Nature Enthusiast",
+        "reviewer_description": "Horizon Forbidden West immerses you in a breathtaking world filled with awe-inspiring creatures. Aloy's journey is a marvel."
+      },
+      {
+        "reviewer_name": "GamingAdventurer",
+        "reviewer_image": "/images/games/reviewer/gamingadventurer-avatar.jpg",
+        "reviewer_title": "Adventurer Extraordinaire",
+        "reviewer_description": "Exploring the Forbidden West is a thrilling adventure, and the game's visuals are a feast for the eyes."
+      }
+    ]
+  },
+  {
+    "_id": "6",
+    "_slug": "assassins-creed-valhalla",
+    "title": "Assassin's Creed Valhalla",
+    "brief_description": "Experience Viking warfare and explore medieval England in this epic action-adventure. Lead your clan to glory.",
+    "long_description": "Assassin's Creed Valhalla transports you to the Viking Age, where you'll step into the shoes of Eivor, a legendary Viking warrior. Raid and conquer, build your settlement, and shape the destiny of your clan. With a sprawling open world, rich historical detail, and engaging combat, this game offers an epic Viking saga.",
+    "game_price": 49.99,
+    "game_thumbnails": [
+      "/images/games/assassins-creed-valhalla-thumb1.jpg",
+      "/images/games/assassins-creed-valhalla-thumb2.jpg"
+    ],
+    "gameplay_video": "https://www.youtube.com/watch?v=ssrNcwxALS4",
+    "game_info": {
+      "release_date": "November 10, 2020",
+      "publisher": "Ubisoft",
+      "developer": "Ubisoft Montreal",
+      "engine": "Anvil Engine",
+      "platforms": ["PlayStation 4", "Xbox One", "PC"]
+    },
+    "reviews": [
+      {
+        "reviewer_name": "GamerX",
+        "reviewer_image": "/images/games/reviewer/gamerx-avatar.jpg",
+        "reviewer_title": "Gaming Guru",
+        "reviewer_description": "A thrilling adventure through Night City with jaw-dropping visuals and an engrossing story. Cyberpunk 2077 sets a new standard for open-world RPGs."
+      },
+      {
+        "reviewer_name": "TechGeek",
+        "reviewer_image": "/images/games/reviewer/techgeek-avatar.jpg",
+        "reviewer_title": "Tech Enthusiast",
+        "reviewer_description": "Cyberpunk 2077 pushes the boundaries of gaming technology, delivering an unforgettable experience in a visually stunning world."
+      }
+    ]
+  },
+  {
+    "_id": "7",
+    "_slug": "grand-theft-auto-v",
+    "title": "Grand Theft Auto V",
+    "brief_description": "Enter the criminal underworld of Los Santos in this open-world action game. Live the lives of three unique criminals in a sprawling city.",
+    "long_description": "Grand Theft Auto V is an open-world action-adventure game that immerses you in the criminal underbelly of Los Santos. Play as three protagonists, each with their own story, and explore a vast city filled with opportunities and dangers. With its richly detailed world, engaging missions, and an online multiplayer mode, GTA V offers endless entertainment.",
+    "game_price": 29.99,
+    "game_thumbnails": [
+      "/images/games/gta-v-thumb1.jpg",
+      "/images/games/gta-v-thumb2.jpg"
+    ],
+    "gameplay_video": "https://www.youtube.com/watch?v=71OLdbq1SN0",
+    "game_info": {
+      "release_date": "September 17, 2013",
+      "publisher": "Rockstar Games",
+      "developer": "Rockstar North",
+      "engine": "RAGE",
+      "platforms": ["PlayStation 4", "Xbox One", "PC"]
+    },
+    "reviews": [
+      {
+        "reviewer_name": "GamingMaster",
+        "reviewer_image": "/images/games/reviewer/gamingmaster-avatar.jpg",
+        "reviewer_title": "Master Gamer",
+        "reviewer_description": "The Last of Us Part II is a masterpiece that tugs at your heartstrings while delivering intense gameplay. Naughty Dog has outdone themselves."
+      },
+      {
+        "reviewer_name": "Storyteller99",
+        "reviewer_image": "/images/games/reviewer/storyteller99-avatar.jpg",
+        "reviewer_title": "Storytelling Enthusiast",
+        "reviewer_description": "This game's narrative depth and character development are unparalleled. A true work of art in the gaming world."
+      }
+    ]
+  },
+  {
+    "_id": "8",
+    "_slug": "the-witcher-3-wild-hunt",
+    "title": "The Witcher 3: Wild Hunt",
+    "brief_description": "Embark on an epic quest as Geralt of Rivia in this open-world RPG. Hunt monsters, forge alliances, and shape your destiny.",
+    "long_description": "The Witcher 3: Wild Hunt is a sprawling open-world RPG that puts you in the shoes of Geralt of Rivia, a monster hunter on a quest to find his adopted daughter. Explore a richly detailed world filled with morally ambiguous choices, mythical creatures, and captivating stories. With its deep narrative, complex characters, and stunning visuals, this game is a masterpiece of the genre.",
+    "game_price": 39.99,
+    "game_thumbnails": [
+      "/images/games/the-witcher-3-thumb1.jpg",
+      "/images/games/the-witcher-3-thumb2.jpg"
+    ],
+    "gameplay_video": "https://www.youtube.com/watch?v=1-l29HlKkXU",
+    "game_info": {
+      "release_date": "May 19, 2015",
+      "publisher": "CD Projekt",
+      "developer": "CD Projekt Red",
+      "engine": "REDengine 3",
+      "platforms": ["PlayStation 4", "Xbox One", "PC"]
+    },
+    "reviews": [
+      {
+        "reviewer_name": "HorrorFan",
+        "reviewer_image": "/images/games/reviewer/horrorfan-avatar.jpg",
+        "reviewer_title": "Horror Aficionado",
+        "reviewer_description": "Resident Evil Village is a spine-tingling journey into terror. It's a must-play for horror enthusiasts."
+      },
+      {
+        "reviewer_name": "SurvivalExpert",
+        "reviewer_image": "/images/games/reviewer/survivalexpert-avatar.jpg",
+        "reviewer_title": "Survival Expert",
+        "reviewer_description": "The atmosphere and tension in Resident Evil Village are palpable. A fantastic addition to the series."
+      }
+    ]
+  },
+  {
+    "_id": "9",
+    "_slug": "doom-eternal",
+    "title": "Doom Eternal",
+    "brief_description": "Rip and tear through hordes of demons in this high-octane first-person shooter. Save Earth from the forces of Hell.",
+    "long_description": "Doom Eternal is a fast-paced first-person shooter that puts you in the shoes of the Doom Slayer, a relentless warrior on a mission to save Earth from the demonic invasion. With a wide array of weapons, intense battles, and a metal soundtrack, this game offers an adrenaline-pumping experience that will test your reflexes and combat skills.",
+    "game_price": 49.99,
+    "game_thumbnails": [
+      "/images/games/doom-eternal-thumb1.jpg",
+      "/images/games/doom-eternal-thumb2.jpg"
+    ],
+    "gameplay_video": "https://www.youtube.com/watch?v=_UuktemkCFI",
+    "game_info": {
+      "release_date": "March 20, 2020",
+      "publisher": "Bethesda Softworks",
+      "developer": "id Software",
+      "engine": "id Tech 7",
+      "platforms": ["PlayStation 4", "Xbox One", "PC"]
+    },
+    "reviews": [
+      {
+        "reviewer_name": "NatureExplorer",
+        "reviewer_image": "/images/games/reviewer/natureexplorer-avatar.jpg",
+        "reviewer_title": "Nature Enthusiast",
+        "reviewer_description": "Horizon Forbidden West immerses you in a breathtaking world filled with awe-inspiring creatures. Aloy's journey is a marvel."
+      },
+      {
+        "reviewer_name": "GamingAdventurer",
+        "reviewer_image": "/images/games/reviewer/gamingadventurer-avatar.jpg",
+        "reviewer_title": "Adventurer Extraordinaire",
+        "reviewer_description": "Exploring the Forbidden West is a thrilling adventure, and the game's visuals are a feast for the eyes."
+      }
+    ]
+  },
+  {
+    "_id": "10",
+    "_slug": "red-dead-redemption-2",
+    "title": "Red Dead Redemption 2",
+    "brief_description": "Immerse yourself in the Wild West in this epic open-world adventure. Live the life of an outlaw and experience a captivating story.",
+    "long_description": "Red Dead Redemption 2 is an epic open-world game set in the late 1800s, allowing you to experience the rugged life of an outlaw in the American Wild West. With stunning visuals, immersive storytelling, and a vast open world to explore, it's a journey filled with danger, moral choices, and the pursuit of freedom.",
+    "game_price": 59.99,
+    "game_thumbnails": [
+      "/images/games/red-dead-redemption-2-thumb1.jpg",
+      "/images/games/red-dead-redemption-2-thumb2.jpg"
+    ],
+    "gameplay_video": "https://www.youtube.com/watch?v=gmA6MrX81z4",
+    "game_info": {
+      "release_date": "October 26, 2018",
+      "publisher": "Rockstar Games",
+      "developer": "Rockstar Studios",
+      "engine": "RAGE",
+      "platforms": ["PlayStation 4", "Xbox One", "PC"]
+    },
+    "reviews": [
+      {
+        "reviewer_name": "WildWestFan",
+        "reviewer_image": "",
+        "reviewer_title": "Wild West Enthusiast",
+        "reviewer_description": "Red Dead Redemption 2 captures the essence of the Wild West like no other game. A true masterpiece."
+      },
+      {
+        "reviewer_name": "TechGeek",
+        "reviewer_image": "/images/games/reviewer/techgeek-avatar.jpg",
+        "reviewer_title": "Tech Enthusiast",
+        "reviewer_description": "Cyberpunk 2077 pushes the boundaries of gaming technology, delivering an unforgettable experience in a visually stunning world."
+      }
+    ]
+  },
+  {
+    "_id": "11",
+    "_slug": "star-wars-jedi-fallen-order",
+    "title": "Star Wars Jedi: Fallen Order",
+    "brief_description": "Become a Jedi and explore the Star Wars universe in this action-packed adventure. Uncover the secrets of the Force.",
+    "long_description": "Star Wars Jedi: Fallen Order is an action-adventure game set in the Star Wars universe. You play as Cal Kestis, a young Jedi on a quest to rebuild the Jedi Order. With lightsaber combat, force powers, and a captivating story, this game offers an authentic Star Wars experience.",
+    "game_price": 44.99,
+    "game_thumbnails": [
+      "/images/games/star-wars-jedi-fallen-order-thumb1.jpg",
+      "/images/games/star-wars-jedi-fallen-order-thumb2.jpg"
+    ],
+    "gameplay_video": "https://www.youtube.com/watch?v=8939aURV9Dc",
+    "game_info": {
+      "release_date": "November 15, 2019",
+      "publisher": "Electronic Arts",
+      "developer": "Respawn Entertainment",
+      "engine": "Unreal Engine 4",
+      "platforms": ["PlayStation 4", "Xbox One", "PC"]
+    },
+    "reviews": [
+      {
+        "reviewer_name": "GamerX",
+        "reviewer_image": "/images/games/reviewer/gamerx-avatar.jpg",
+        "reviewer_title": "Gaming Guru",
+        "reviewer_description": "A thrilling adventure through Night City with jaw-dropping visuals and an engrossing story. Cyberpunk 2077 sets a new standard for open-world RPGs."
+      },
+      {
+        "reviewer_name": "ActionAdventureFan",
+        "reviewer_image": "",
+        "reviewer_title": "Action Adventure Enthusiast",
+        "reviewer_description": "The lightsaber combat in this game is incredibly satisfying, and the story is a thrilling journey for any gamer."
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: url("/images/slider/game-slider-01.png");
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1059%26quot%3b)' fill='none'%3e%3cpath d='M1414.7576357287494 480.64193270032354L1534.119062283236 397.06416205540734 1450.5412916383198 277.7027355009207 1331.1798650838332 361.2805061458369z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1016.6677453416273 331.6557807592316L928.7693853396097 425.91523168788046 1023.0288362682585 513.8135916898982 1110.9271962702762 419.5541407612493z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M106.75413713724897 109.30077718907327L52.508604961192816 42.31312375013091-20.85010910919263 157.17524873368635z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M563.4690172531848 186.99488469895886L627.7001701222426 218.322511154354 642.5760333708064 106.31196862306963z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1275.0936633689748 292.3468100468956L1225.1131565343562 220.96724883507443 1203.7141021571538 342.3273168815142z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M504.3591973151874 408.7159933388113L539.05032260917 318.3425221935346 448.6768514638933 283.6513968995519 413.98572616991066 374.0248680448286z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M54.67645811295061 177.10930197067358L104.83284816902169 230.89544527459736 160.43386809687186 128.76778853852886z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1063.89 53.21 a183.49 183.49 0 1 0 366.98 0 a183.49 183.49 0 1 0 -366.98 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1059'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
