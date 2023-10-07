@@ -95,12 +95,16 @@ const MainNavbar = () => {
       </div>
       <div className="navbar-end">
         <div className="space-x-[1px]">
-          <button className="text-xs btn btn-sm normal-case bg-secondary hover:bg-secondary text-black rounded-none border-none rounded-l-full">
-            Sign In
-          </button>
-          <button className="text-xs btn btn-sm normal-case bg-secondary hover:bg-secondary text-black rounded-none border-none rounded-r-full">
-            Sign Up
-          </button>
+          <Link to="/auth/signin">
+            <button className="text-xs btn btn-sm normal-case bg-secondary hover:bg-secondary text-black rounded-none border-none rounded-l-full">
+              Sign In
+            </button>
+          </Link>
+          <Link to="/auth/signup">
+            <button className="text-xs btn btn-sm normal-case bg-secondary hover:bg-secondary text-black rounded-none border-none rounded-r-full">
+              Sign Up
+            </button>
+          </Link>
         </div>
       </div>
     </nav>
