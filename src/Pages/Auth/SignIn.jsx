@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Logo from "/images/logo-header.png";
 import ContinueWithSocialAccount from "./ContinueWithSocialAccount";
 import { useContext, useState } from "react";
@@ -6,6 +6,9 @@ import { AuthContext } from "../../Provider/AuthProfider";
 import Swal from "sweetalert2";
 
 const SignIn = () => {
+  const location = useLocation();
+  const navigate = useNavigate()
+
   const { userSignIn } = useContext(AuthContext);
   const [errorMessage, setErrorMessage] = useState(null);
 
@@ -24,6 +27,7 @@ const SignIn = () => {
         showConfirmButton: false,
         timer: 2500,
       });
+      navigate(location?.state ? location.state : "/");
     } catch (error) {
       setErrorMessage("Email or Password is incorrect!");
     }

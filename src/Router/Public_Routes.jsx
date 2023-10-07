@@ -8,6 +8,7 @@ import GameDetails from "../Pages/GameDetails/GameDetails";
 import AuthLayout from "../Layouts/AuthLayout";
 import SignIn from "../Pages/Auth/SignIn";
 import SignUp from "../Pages/Auth/SignUp";
+import Private_Routes from "./Private_Routes";
 
 const Public_Routes = createBrowserRouter([
   {
@@ -26,12 +27,20 @@ const Public_Routes = createBrowserRouter([
       },
       {
         path: "/service/:id",
-        element: <Service />,
+        element: (
+          <Private_Routes>
+            <Service />
+          </Private_Routes>
+        ),
         loader: () => fetch("/data/services.json"),
       },
       {
         path: "/game/:id",
-        element: <GameDetails />,
+        element: (
+          <Private_Routes>
+            <GameDetails />
+          </Private_Routes>
+        ),
         loader: () => fetch("/data/game.json"),
       },
       {

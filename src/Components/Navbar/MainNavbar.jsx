@@ -1,10 +1,14 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProfider";
 
 const MainNavbar = () => {
   const activeNavStyle =
-    "btn btn-sm border-none bg-secondary hover:bg-secondary text-black hover:text-black  rounded-full leading-[1.1rem]";
+    "btn btn-sm border-none bg-secondary hover:bg-secondary text-black hover:text-black  rounded-none leading-[1.1rem]";
   const unActiveNavStyle =
-    "btn btn-sm border-none hover:bg-secondary text-white hover:text-black btn-sm rounded-none rounded-full leading-[1.1rem]";
+    "btn btn-sm bg-transparent border-none hover:bg-secondary text-white hover:text-black btn-sm rounded-none rounded-none leading-[1.1rem]";
+
+  const { user, signOutUser } = useContext(AuthContext);
 
   const menuLinks = (
     <>
@@ -94,18 +98,50 @@ const MainNavbar = () => {
         </Link>
       </div>
       <div className="navbar-end">
-        <div className="space-x-[1px]">
-          <Link to="/auth/signin">
-            <button className="text-xs btn btn-sm normal-case bg-secondary hover:bg-secondary text-black rounded-none border-none rounded-l-full">
-              Sign In
-            </button>
-          </Link>
-          <Link to="/auth/signup">
-            <button className="text-xs btn btn-sm normal-case bg-secondary hover:bg-secondary text-black rounded-none border-none rounded-r-full">
-              Sign Up
-            </button>
-          </Link>
-        </div>
+        {user ? (
+          <div className="dropdown dropdown-end z-50">
+            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full">
+                <img
+                  src={
+                    user?.photoURL
+                      ? `${user?.photoURL}`
+                      : "/images/icons/profile.jpg"
+                  }
+                />
+              </div>
+            </label>
+            <ul
+              tabIndex={0}
+              className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <Link to="/profile">
+                  <span className="justify-between">Profile</span>
+                </Link>
+              </li>
+              <li>
+                <a>Settings</a>
+              </li>
+              <li onClick={signOutUser}>
+                <span>Logout</span>
+              </li>
+            </ul>
+          </div>
+        ) : (
+          <div className="space-x-[1px]">
+            <Link to="/auth/signin">
+              <button className="text-xs btn btn-sm normal-case bg-secondary hover:bg-secondary text-black rounded-none border-none rounded-l-full">
+                Sign In
+              </button>
+            </Link>
+            <Link to="/auth/signup">
+              <button className="text-xs btn btn-sm normal-case bg-secondary hover:bg-secondary text-black rounded-none border-none rounded-r-full">
+                Sign Up
+              </button>
+            </Link>
+          </div>
+        )}
       </div>
     </nav>
   );

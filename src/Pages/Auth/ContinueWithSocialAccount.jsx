@@ -1,23 +1,34 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProfider";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const ContinueWithSocialAccount = () => {
   const { continueWithGoogle, continueWithFacebook } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const continueWithGoogleAccount = () => {
+    continueWithGoogle();
+    navigate(location?.state ? location.state : "/");
+  };
+  const continueWithFacebookAccount = () => {
+    continueWithFacebook();
+    navigate(location?.state ? location.state : "/");
+  };
+
   return (
     <div className="mt-4">
       <div className="flex items-center justify-between ">
         <span className="w-1/5 border-b dark:border-gray-600 lg:w-1/5"></span>
-
         <span className="text-xs text-center text-gray-500 uppercase dark:text-gray-400">
           or continue with Social Account
         </span>
-
         <span className="w-1/5 border-b dark:border-gray-400 lg:w-1/5"></span>
       </div>
 
       <div className="flex items-center justify-between mt-6">
         <button
-          onClick={continueWithGoogle}
+          onClick={continueWithGoogleAccount}
           className="flex items-center justify-center btn w-[50%] md:w-[82%] "
         >
           <svg
@@ -49,7 +60,7 @@ const ContinueWithSocialAccount = () => {
         </button>
 
         <button
-          onClick={continueWithFacebook}
+          onClick={continueWithFacebookAccount}
           className="flex items-center justify-center btn w-[48%] md:w-[15%]"
         >
           <svg

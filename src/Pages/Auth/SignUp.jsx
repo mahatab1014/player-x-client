@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Logo from "/images/logo-header.png";
 import ContinueWithSocialAccount from "./ContinueWithSocialAccount";
 import { useContext, useState } from "react";
@@ -8,6 +8,9 @@ import Swal from "sweetalert2";
 const SignUp = () => {
   const { signUpWithEmailAndPassword, userInformation } =
     useContext(AuthContext);
+
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const [confirmPass, setConfirmPass] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
@@ -46,6 +49,7 @@ const SignUp = () => {
         showConfirmButton: false,
         timer: 2500,
       });
+      navigate(location?.state ? location.state : "/");
     } catch (error) {
       console.log(error.message);
     }
