@@ -34,6 +34,16 @@ const MainNavbar = () => {
       </li>
       <li>
         <NavLink
+          to="/Shop"
+          className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? activeNavStyle : unActiveNavStyle
+          }
+        >
+          Shop
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to="/blog"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? activeNavStyle : unActiveNavStyle
@@ -98,6 +108,7 @@ const MainNavbar = () => {
         </Link>
       </div>
       <div className="navbar-end">
+        <h4 className="hidden md:block">{user?.displayName}</h4>
         {user ? (
           <div className="dropdown dropdown-end z-50">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">

@@ -9,6 +9,8 @@ import AuthLayout from "../Layouts/AuthLayout";
 import SignIn from "../Pages/Auth/SignIn";
 import SignUp from "../Pages/Auth/SignUp";
 import Private_Routes from "./Private_Routes";
+import Shop from "../Pages/Shop/Shop";
+import AboutUs from "../Pages/AboutUs/AboutUs";
 
 const Public_Routes = createBrowserRouter([
   {
@@ -35,6 +37,10 @@ const Public_Routes = createBrowserRouter([
         loader: () => fetch("/data/services.json"),
       },
       {
+        path: "/shop",
+        element: <Shop />
+      },
+      {
         path: "/game/:id",
         element: (
           <Private_Routes>
@@ -56,6 +62,10 @@ const Public_Routes = createBrowserRouter([
             element: <SignUp />,
           },
         ],
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />
       },
       {
         path: "*",
