@@ -20,22 +20,24 @@ const Slider = () => {
       <>
         <Swiper
           pagination={true}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
+          // loop={true}
+          // autoplay={{
+          //   delay: 3500,
+          //   disableOnInteraction: false,
+          // }}
           modules={[Pagination, Autoplay]}
-          className="mySwiper"
-          style={{height: "70vh"}}
         >
           <SwiperSlide>
             <div className="relative">
-              <div className="absolute top-2/4 text-left px-10">
-                <p className="text-black text-4xl">Play Games with</p>
-                <h2 className="text-8xl font-semibold text-primary z-50 flex">
+              <div className="absolute top-2/4 text-left px-5 md:px-10">
+                <p className="text-black text-2xl md:text-4xl">
+                  Play Games with
+                </p>
+                <h2 className="text-3xl md:text-8xl font-semibold text-primary z-50 flex">
                   Player
-                  <img src="/images/logo-header.png" alt="" />
+                  <figure className="w-1/4 md:w-auto">
+                    <img className="" src="/images/logo-header.png" alt="" />
+                  </figure>
                 </h2>
               </div>
               <figure>
@@ -45,11 +47,15 @@ const Slider = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="relative">
-              <div className="absolute backdrop-blur-sm top-2/4 text-left px-10 py-3 rounded-r-xl">
-                <p className="text-white text-4xl">Play with your squads</p>
-                <h2 className="text-8xl font-semibold text-primary z-50 flex">
+              <div className="backdrop-blur-sm absolute top-2/4 text-left px-5 md:px-10 py-3 rounded-r-xl">
+                <p className="text-white text-2xl md:text-4xl">
+                  Play with your squads
+                </p>
+                <h2 className="text-3xl md:text-8xl font-semibold text-primary z-50 flex">
                   Player
-                  <img src="/images/logo-header.png" alt="" />
+                  <figure className="w-12 md:w-auto">
+                    <img src="/images/logo-header.png" alt="" />
+                  </figure>
                 </h2>
               </div>
               <figure>
@@ -60,11 +66,15 @@ const Slider = () => {
 
           <SwiperSlide>
             <div className="relative">
-              <div className="absolute backdrop-blur-sm top-2/4 text-left px-10 py-3 rounded-r-xl">
-                <p className="text-white text-4xl">PUBG MOBILE with</p>
-                <h2 className="text-8xl font-semibold text-primary z-50 flex">
+              <div className="backdrop-blur-sm absolute top-2/4 text-left px-5 md:px-10 py-3 rounded-r-xl">
+                <p className="text-white text-2xl md:text-4xl">
+                  PUBG MOBILE with
+                </p>
+                <h2 className="text-3xl md:text-8xl font-semibold text-primary z-50 flex">
                   Player
-                  <img src="/images/logo-header.png" alt="" />
+                  <figure className="w-12 md:w-auto">
+                    <img className="" src="/images/logo-header.png" alt="" />
+                  </figure>
                 </h2>
               </div>
               <figure>
@@ -74,11 +84,15 @@ const Slider = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="relative">
-              <div className="absolute backdrop-blur-sm top-2/4 text-left px-10 py-3 rounded-r-xl">
-                <p className="text-white text-4xl">Play Games with</p>
-                <h2 className="text-8xl font-semibold text-primary z-50 flex">
+              <div className="backdrop-blur-sm absolute top-2/4 text-left px-5 md:px-10 py-3 rounded-r-xl">
+                <p className="text-white text-2xl md:text-4xl">
+                  Play Games with
+                </p>
+                <h2 className="text-3xl md:text-8xl font-semibold text-primary z-50 flex">
                   Player
-                  <img src="/images/logo-header.png" alt="" />
+                  <figure className="w-12 md:w-auto">
+                    <img className="" src="/images/logo-header.png" alt="" />
+                  </figure>
                 </h2>
               </div>
               <figure>

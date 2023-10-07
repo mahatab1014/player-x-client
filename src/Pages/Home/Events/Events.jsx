@@ -29,7 +29,7 @@ const Events = () => {
   const daysDuration = days * daySeconds;
 
   return (
-    <div className="flex justify-center gap-5 text-center">
+    <div className="flex justify-center gap-5 text-center flex-wrap [&>div]:!w-1/3 [&>div]:flex [&>div]:!justify-center md:[&>div]:!w-auto">
       <CountdownCircleTimer
         {...timerProps}
         colors="#ffff00"
