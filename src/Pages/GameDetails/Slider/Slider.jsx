@@ -24,26 +24,24 @@ const Slider = ({ game_thumbnails, gameplay_video }) => {
   const gamePlayVideoID = extractVideoId(gameplay_video);
 
   const youtubeOpts = {
-    height: "420px",
-    width: "980px",
     playerVars: {
       autoplay: 1,
     },
   };
 
   return (
-    <div>
-      <>
+    <>
+      <div className="">
         <Swiper
           className="mySwiper swiper-h"
-          spaceBetween={50}
+          spaceBetween={500}
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination, Autoplay]}
+          modules={[Pagination]}
           style={{ height: "80vh" }}
           autoplay={{
-            delay: 5000,
+            delay: 8000,
           }}
         >
           <SwiperSlide>
@@ -58,7 +56,7 @@ const Slider = ({ game_thumbnails, gameplay_video }) => {
               modules={[Pagination, Mousewheel, Autoplay]}
               style={{ height: "80vh" }}
               autoplay={{
-                delay: 2500,
+                delay: 4500,
               }}
             >
               <SwiperSlide>
@@ -74,13 +72,13 @@ const Slider = ({ game_thumbnails, gameplay_video }) => {
             </Swiper>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="[&>div>iframe]:shadow-xl shadow-black [&>div>iframe]:rounded-2xl">
+            <div className="[&>div>iframe]:w-full [&>div>iframe]:h-full sm:[&>div>iframe]:w-[630px] sm:[&>div>iframe]:h-[320px] lg:[&>div>iframe]:w-[980px] lg:[&>div>iframe]:h-[420px] shadow-black [&>div>iframe]:rounded-2xl">
               <YouTube videoId={gamePlayVideoID} opts={youtubeOpts} />
             </div>
           </SwiperSlide>
         </Swiper>
-      </>
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -2,10 +2,10 @@ import ServiceGrid from "../../Components/Services/ServiceGrid";
 
 const Services = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 px-5">
       <div className="container mx-auto">
         <div className="section-title text-center">
-          <h2 className="text-5xl font-semibold uppercase text-white">
+          <h2 className="text-3xl sm:text-5xl font-semibold uppercase text-white">
             Our <span className="text-primary">Ser</span>vices
           </h2>
           <p className="md:max-w-3xl md:m-auto pt-2 pb-5">

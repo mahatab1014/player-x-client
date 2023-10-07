@@ -87,7 +87,7 @@ const MainNavbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[50] p-2 shadow bg-base-100 rounded-box w-52"
           >
             {menuLinks}
           </ul>
@@ -142,11 +142,11 @@ const MainNavbar = () => {
         ) : (
           <div className="space-x-[1px]">
             <Link to="/auth/signin">
-              <button className="text-xs btn btn-sm normal-case bg-secondary hover:bg-secondary text-black rounded-none border-none rounded-l-full">
+              <button className="text-xs btn btn-sm normal-case bg-secondary hover:bg-secondary text-black border-none rounded-full sm:rounded-none sm:rounded-l-full">
                 Sign In
               </button>
             </Link>
-            <Link to="/auth/signup">
+            <Link className="hidden sm:inline" to="/auth/signup">
               <button className="text-xs btn btn-sm normal-case bg-secondary hover:bg-secondary text-black rounded-none border-none rounded-r-full">
                 Sign Up
               </button>

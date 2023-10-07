@@ -48,8 +48,14 @@ const SignUp = () => {
         title: "Your account created successfully",
         showConfirmButton: false,
         timer: 2500,
+      }).then(() => {
+        // Navigate to the desired location
+        if (location?.state) {
+          navigate(location.state);
+        } else {
+          navigate("/");
+        }
       });
-      navigate(location?.state ? location.state : "/");
     } catch (error) {
       console.log(error.message);
     }

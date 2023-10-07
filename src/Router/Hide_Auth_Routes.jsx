@@ -1,23 +1,22 @@
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
-import { Navigate, useLocation } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import Spinner from "../Components/LoadingAnimation/Spinner";
 import { AuthContext } from "../Provider/AuthProfider";
-import Skeleton from "../Components/LoadingAnimation/Skeleton";
+import SignIn from "../Pages/Auth/SignIn";
 
-const Private_Routes = ({ children }) => {
+const Hide_Auth_Routes = ({ children }) => {
   const { user, loading } = useContext(AuthContext);
-  const location = useLocation();
 
   if (loading) {
     return <Spinner />;
   }
 
   if (user) {
-    return children;
+    return <Navigate to="/profile" />;
   }
 
-  return <Navigate to="/auth/signin" state={location.pathname} />;
+  return children;
 };
 
-export default Private_Routes;
+export default Hide_Auth_Routes;

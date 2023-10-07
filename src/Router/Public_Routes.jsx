@@ -11,6 +11,8 @@ import SignUp from "../Pages/Auth/SignUp";
 import Private_Routes from "./Private_Routes";
 import Shop from "../Pages/Shop/Shop";
 import AboutUs from "../Pages/AboutUs/AboutUs";
+import Hide_Auth_Routes from "./Hide_Auth_Routes";
+import Profile from "../Pages/Profile/Profile";
 
 const Public_Routes = createBrowserRouter([
   {
@@ -38,7 +40,7 @@ const Public_Routes = createBrowserRouter([
       },
       {
         path: "/shop",
-        element: <Shop />
+        element: <Shop />,
       },
       {
         path: "/game/:id",
@@ -55,17 +57,29 @@ const Public_Routes = createBrowserRouter([
         children: [
           {
             path: "/auth/signin",
-            element: <SignIn />,
+            element: (
+              <Hide_Auth_Routes>
+                <SignIn />
+              </Hide_Auth_Routes>
+            ),
           },
           {
             path: "/auth/signup",
-            element: <SignUp />,
+            element: (
+              <Hide_Auth_Routes>
+                <SignUp />
+              </Hide_Auth_Routes>
+            ),
           },
         ],
       },
       {
         path: "/about-us",
-        element: <AboutUs />
+        element: <AboutUs />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />
       },
       {
         path: "*",

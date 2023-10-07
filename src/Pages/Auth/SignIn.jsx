@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 
 const SignIn = () => {
   const location = useLocation();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const { userSignIn } = useContext(AuthContext);
   const [errorMessage, setErrorMessage] = useState(null);
@@ -26,8 +26,14 @@ const SignIn = () => {
         title: "Your account has been signed in successfully",
         showConfirmButton: false,
         timer: 2500,
+      }).then(() => {
+        // Navigate to the desired location
+        if (location?.state) {
+          navigate(location.state);
+        } else {
+          navigate("/");
+        }
       });
-      navigate(location?.state ? location.state : "/");
     } catch (error) {
       setErrorMessage("Email or Password is incorrect!");
     }

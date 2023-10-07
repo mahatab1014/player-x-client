@@ -8,8 +8,8 @@ const Service = () => {
 
   return (
     <section>
-      <div className="container mx-auto py-10 ">
-        <article className="card card-side">
+      <div className="container mx-auto md:py-10 ">
+        <article className="card md:card-side">
           <figure className="">
             <img src={image} className="" alt="" />
           </figure>

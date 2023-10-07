@@ -1,19 +1,56 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProfider";
 import { useLocation, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const ContinueWithSocialAccount = () => {
   const { continueWithGoogle, continueWithFacebook } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
 
-  const continueWithGoogleAccount = () => {
-    continueWithGoogle();
-    navigate(location?.state ? location.state : "/");
+  const continueWithGoogleAccount = async () => {
+    try {
+      await continueWithGoogle(); // Assuming `continueWithGoogle` is an asynchronous function
+      setTimeout(() => {
+        Swal.fire({
+          icon: "success",
+          title: "Your account has been signed in via Google",
+          showConfirmButton: true,
+        }).then(() => {
+          // Navigate to the desired location
+          if (location?.state) {
+            navigate(location.state);
+          } else {
+            navigate("/");
+          }
+        });
+      }, 4500);
+    } catch (error) {
+      console.error(error);
+    }
   };
-  const continueWithFacebookAccount = () => {
-    continueWithFacebook();
-    navigate(location?.state ? location.state : "/");
+
+  const continueWithFacebookAccount = async () => {
+    try {
+      await continueWithFacebook();
+      setTimeout(() => {
+        Swal.fire({
+          icon: "success",
+          title: "Your account has been signed in via Facebook",
+          showConfirmButton: true,
+        }).then(() => {
+          // Navigate to the desired location
+          if (location?.state) {
+            navigate(location.state);
+          } else {
+            navigate("/");
+          }
+        });
+      }, 4000);
+    } catch (error) {
+      // Handle any error that occurred during sign-in
+      console.error(error);
+    }
   };
 
   return (
