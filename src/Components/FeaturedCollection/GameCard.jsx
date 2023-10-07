@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const GameCard = ({ game }) => {
-  console.log(game);
+
   const { title, brief_description, _slug, game_thumbnails } = game;
   return (
     <div className="h-full flex flex-col justify-between p-5 shadow-lg hover:shadow-xl shadow-[#8e87e629] hover:shadow-[#8d87e63d] rounded-xl transition-all">

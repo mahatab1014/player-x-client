@@ -1,13 +1,39 @@
 import { Link } from "react-router-dom";
 import Logo from "/images/logo-header.png";
 import ContinueWithSocialAccount from "./ContinueWithSocialAccount";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../Provider/AuthProfider";
+import Swal from "sweetalert2";
 
 const SignIn = () => {
+  const { userSignIn } = useContext(AuthContext);
+  const [errorMessage, setErrorMessage] = useState(null);
+
+  const handleSignIn = async (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    setErrorMessage("");
+
+    try {
+      await userSignIn(email, password);
+      Swal.fire({
+        icon: "success",
+        title: "Your account has been signed in successfully",
+        showConfirmButton: false,
+        timer: 2500,
+      });
+    } catch (error) {
+      setErrorMessage("Email or Password is incorrect!");
+    }
+  };
+
   return (
     <section className="bg-gray-900">
       <div className="container flex justify-center py-10 px-6 mx-auto">
         <div className="w-full max-w-md">
-          <form className="">
+          <form onSubmit={handleSignIn} className="">
             <div className="flex items-center justify-center mx-auto">
               <span className="text-2xl text-white">Player</span>
               <img className="w-auto h-7 sm:h-8" src={Logo} alt="" />
@@ -28,6 +54,12 @@ const SignIn = () => {
                 sign up
               </Link>
             </div>
+
+            {errorMessage && (
+              <div className="mt-8 bg-error p-2 text-black">
+                <span>{errorMessage}</span>
+              </div>
+            )}
 
             <div className="relative flex items-center mt-6">
               <span className="absolute">
@@ -51,6 +83,7 @@ const SignIn = () => {
                 type="email"
                 className="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 placeholder="Email address"
+                name="email"
                 required
               />
             </div>
@@ -77,6 +110,7 @@ const SignIn = () => {
                 type="password"
                 className="block w-full px-10 py-3 text-gray-700 bg-white border rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
                 placeholder="Password"
+                name="password"
                 required
               />
             </div>

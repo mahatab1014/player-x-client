@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProfider";
+
 const ContinueWithSocialAccount = () => {
+  const { continueWithGoogle, continueWithFacebook } = useContext(AuthContext);
   return (
     <div className="mt-4">
       <div className="flex items-center justify-between ">
@@ -12,7 +16,10 @@ const ContinueWithSocialAccount = () => {
       </div>
 
       <div className="flex items-center justify-between mt-6">
-        <button className="flex items-center justify-center btn w-[50%] md:w-[82%] ">
+        <button
+          onClick={continueWithGoogle}
+          className="flex items-center justify-center btn w-[50%] md:w-[82%] "
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
@@ -41,7 +48,10 @@ const ContinueWithSocialAccount = () => {
           <span className="hidden mx-2 md:inline">Sign in with Google</span>
         </button>
 
-        <button className="flex items-center justify-center btn w-[48%] md:w-[15%]">
+        <button
+          onClick={continueWithFacebook}
+          className="flex items-center justify-center btn w-[48%] md:w-[15%]"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             x="0px"

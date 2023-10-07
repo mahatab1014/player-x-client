@@ -42,7 +42,7 @@ const GameDetails = () => {
               <p className="text-lg py-2">{brief_description}</p>
             </div>
             <div>
-              <p className="text-2xl">
+              <div className="text-2xl">
                 <span className="text-secondary">Price :</span>{" "}
                 <span className="text-white">
                   ${game_price.toString().split(".")[0]}
@@ -50,7 +50,7 @@ const GameDetails = () => {
                     {game_price.toString().split(".")[1]}
                   </sup>
                 </span>
-              </p>
+              </div>
               <button className="btn btn-sm border-none bg-secondary hover:bg-secondary text-black hover:text-black rounded-none">
                 Purchase
               </button>
@@ -61,23 +61,23 @@ const GameDetails = () => {
             <aside>
               <h4 className="text-2xl text-white font-medium">Game Info :</h4>
               <div>
-                <p>
+                <div>
                   <span className="text-secondary">Publisher</span> :{" "}
                   {game_info?.publisher}
-                </p>
-                <p>
+                </div>
+                <div>
                   <span className="text-secondary">Developer</span> :{" "}
                   {game_info?.developer}
-                </p>
-                <p>
+                </div>
+                <div>
                   <span className="text-secondary">Engine</span> :{" "}
                   {game_info?.engine}
-                </p>
-                <p>
+                </div>
+                <div>
                   <span className="text-secondary">Release Date</span> :{" "}
                   {game_info?.release_date}
-                </p>
-                <p>
+                </div>
+                <div>
                   <span className="text-secondary">Platforms</span> :{" "}
                   <div className="flex [&>img]:w-10 gap-3 ">
                     {ps4 && <img src="/images/icons/ps4.png" />}
@@ -86,7 +86,7 @@ const GameDetails = () => {
                     {xboxSeries && <img src="/images/icons/xbox.png" />}
                     {pc && <img src="/images/icons/computer.png" />}
                   </div>
-                </p>
+                </div>
               </div>
             </aside>
             <article className="col-span-3">

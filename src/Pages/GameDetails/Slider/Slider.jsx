@@ -11,26 +11,25 @@ import "./styles.css";
 import { Pagination, Mousewheel, Autoplay } from "swiper/modules";
 
 const Slider = ({ game_thumbnails, gameplay_video }) => {
-  console.log(game_thumbnails, gameplay_video);
-
-  
-  const extractVideoId = (url)=> {
-      const match = url.match(/(?:\?v=|\/embed\/|\/v\/|youtu\.be\/|\/watch\?v=|\/watch\?feature=player_embedded&v=)([^&\n?#]+)/);
-      if (match && match[1]) {
-          return match[1];
-        } else {
-            return null;
-        }
+  const extractVideoId = (url) => {
+    const match = url.match(
+      /(?:\?v=|\/embed\/|\/v\/|youtu\.be\/|\/watch\?v=|\/watch\?feature=player_embedded&v=)([^&\n?#]+)/
+    );
+    if (match && match[1]) {
+      return match[1];
+    } else {
+      return null;
     }
-    const gamePlayVideoID = extractVideoId(gameplay_video);
+  };
+  const gamePlayVideoID = extractVideoId(gameplay_video);
 
-   const youtubeOpts = {
-     height: "420px",
-     width: "980px",
-     playerVars: {
-       autoplay: 1,
-     },
-   };
+  const youtubeOpts = {
+    height: "420px",
+    width: "980px",
+    playerVars: {
+      autoplay: 1,
+    },
+  };
 
   return (
     <div>
