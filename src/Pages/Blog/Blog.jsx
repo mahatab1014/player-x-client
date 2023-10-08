@@ -1,13 +1,24 @@
 import { useLoaderData } from "react-router-dom";
 import BlogCard from "./BlogCard";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Blog = () => {
   const data = useLoaderData();
 
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+    });
+  }, []);
+
   return (
     <section>
       <div className="container mx-auto py-20 px-5">
-        <div className="section-title text-center">
+        <div data-aos="fade-in" className="section-title text-center">
           <h2 className="text-3xl md:text-5xl font-semibold uppercase text-white">
             Latest <span className="text-primary">Blog</span>
           </h2>

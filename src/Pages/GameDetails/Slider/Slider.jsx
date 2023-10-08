@@ -10,6 +10,10 @@ import "./styles.css";
 // import required modules
 import { Pagination, Mousewheel, Autoplay } from "swiper/modules";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Slider = ({ game_thumbnails, gameplay_video }) => {
   const extractVideoId = (url) => {
     const match = url.match(
@@ -29,16 +33,24 @@ const Slider = ({ game_thumbnails, gameplay_video }) => {
     },
   };
 
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+    });
+  }, []);
+
   return (
     <>
-      <div className="">
+      <div data-aos="fade-in" className="">
         <Swiper
           className="mySwiper swiper-h"
           spaceBetween={500}
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
           style={{ height: "80vh" }}
           autoplay={{
             delay: 8000,
@@ -52,11 +64,12 @@ const Slider = ({ game_thumbnails, gameplay_video }) => {
               pagination={{
                 clickable: true,
               }}
+              loop={true}
               mousewheel={true}
               modules={[Pagination, Mousewheel, Autoplay]}
               style={{ height: "80vh" }}
               autoplay={{
-                delay: 4500,
+                delay: 2000,
               }}
             >
               <SwiperSlide>

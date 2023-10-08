@@ -1,10 +1,19 @@
 import ServiceGrid from "../../Components/Services/ServiceGrid";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Services = () => {
+    useEffect(() => {
+      AOS.init({
+        offset: 200,
+        duration: 600,
+        easing: "ease-in-sine",
+      });
+    }, []);
   return (
     <section className="py-20 px-5">
       <div className="container mx-auto">
-        <div className="section-title text-center">
+        <div data-aos="fade-in" className="section-title text-center">
           <h2 className="text-3xl sm:text-5xl font-semibold uppercase text-white">
             Our <span className="text-primary">Ser</span>vices
           </h2>

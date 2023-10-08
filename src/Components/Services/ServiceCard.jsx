@@ -1,10 +1,23 @@
 import PropTypes from "prop-types";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 const ServiceCard = ({ service }) => {
   const { _slug, title, description, image } = service;
+    useEffect(() => {
+      AOS.init({
+        offset: 200,
+        duration: 600,
+        easing: "ease-in-sine",
+      });
+    }, []);
   return (
-    <div className="h-full flex flex-col justify-between p-5 shadow-lg hover:shadow-xl shadow-[#8e87e629] hover:shadow-[#8d87e63d] rounded-xl transition-all">
-      <figure className="">
+    <div
+      data-aos="fade-up"
+      className="h-full flex flex-col justify-between p-5 shadow-lg hover:shadow-xl shadow-[#8e87e629] hover:shadow-[#8d87e63d] rounded-xl transition-all"
+    >
+      <figure data-aos="fade-in" className="">
         <img className="rounded-xl" src={image} alt={description} />
       </figure>
 

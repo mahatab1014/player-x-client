@@ -1,10 +1,22 @@
-import { Link } from "react-router-dom";
-
 /* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const BlogCard = ({ blog }) => {
-  const {_slug, cover_thumbnail, title, details } = blog;
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+    });
+  }, []);
+  const { _slug, cover_thumbnail, title, details } = blog;
   return (
-    <div className="card shadow-xl border shadow-[#ffffff12]">
+    <div
+      data-aos="fade-up"
+      className="card shadow-xl shadow-[#ffffff12]"
+    >
       <figure className="">
         <img src={cover_thumbnail} alt={title} />
       </figure>

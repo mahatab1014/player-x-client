@@ -1,9 +1,19 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const AboutUs = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 120,
+      duration: 500,
+      easing: "ease-in-sine",
+    });
+  }, []);
   return (
-    <section>
+    <section className="overflow-hidden">
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-2">
-          <div className="lg:pr-10">
+          <div data-aos="fade-right" className="lg:pr-10">
             <a
               href="/"
               aria-label="Go Home"
@@ -15,7 +25,8 @@ const AboutUs = () => {
               </div>
             </a>
             <h2 className="mb-4 text-4xl font-semibold leading-none text-white">
-              Get to Know <span className="text-primary">PlayerX</span> : Our Team and Mission
+              Get to Know <span className="text-primary">PlayerX</span> : Our
+              Team and Mission
             </h2>
             <p className="mb-6">
               At PlayerX, we're more than just a game-selling platform. We're a
@@ -69,7 +80,7 @@ const AboutUs = () => {
               </a>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-in">
             <img
               className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
               src="/images/about-us.webp"

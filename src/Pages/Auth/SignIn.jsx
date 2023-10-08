@@ -5,6 +5,10 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProfider";
 import Swal from "sweetalert2";
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const SignIn = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -39,10 +43,18 @@ const SignIn = () => {
     }
   };
 
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+    });
+  }, []);
+
   return (
     <section className="bg-gray-900">
       <div className="container flex justify-center py-10 px-6 mx-auto">
-        <div className="w-full max-w-md">
+        <div data-aos="fade-in" className="w-full max-w-md">
           <form onSubmit={handleSignIn} className="">
             <div className="flex items-center justify-center mx-auto">
               <span className="text-2xl text-white">Player</span>

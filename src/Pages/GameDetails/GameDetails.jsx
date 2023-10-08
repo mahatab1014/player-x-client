@@ -2,6 +2,9 @@ import { useLoaderData, useParams } from "react-router-dom";
 import Slider from "./Slider/Slider";
 import Review from "./Review";
 import Swal from "sweetalert2";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const GameDetails = () => {
   const data = useLoaderData();
@@ -44,6 +47,14 @@ const GameDetails = () => {
     });
   };
 
+  useEffect(() => {
+    AOS.init({
+      offset: 180,
+      duration: 500,
+      easing: "ease-in-sine",
+    });
+  }, []);
+
   return (
     <>
       <section>
@@ -53,14 +64,14 @@ const GameDetails = () => {
         />
       </section>
 
-      <section>
+      <section className="overflow-hidden">
         <div className="container mx-auto py-10 px-5">
           <div className="section-title grid md:grid-cols-4 gap-5 items-center">
-            <div className="md:col-span-3">
+            <div data-aos="fade-right" className="md:col-span-3">
               <h1 className="text-3xl md:text-5xl font-medium">{title}</h1>
               <p className="text-lg py-2">{brief_description}</p>
             </div>
-            <div>
+            <div data-aos="fade-in">
               <div className="">
                 <button onClick={handleFreeTrial} className="custom-button">
                   Play Free trial
@@ -85,7 +96,7 @@ const GameDetails = () => {
           </div>
 
           <div className="grid md:grid-cols-4 py-5 gap-5 md:gap-0">
-            <aside>
+            <aside data-aos="fade-in">
               <h4 className="text-2xl text-white font-medium">Game Info :</h4>
               <div>
                 <div>
@@ -116,7 +127,7 @@ const GameDetails = () => {
                 </div>
               </div>
             </aside>
-            <article className="md:col-span-3">
+            <article data-aos="fade-left" className="md:col-span-3">
               <h4 className="text-2xl text-white font-medium">Description :</h4>
               <p className="text-lg">{long_description}</p>
             </article>
@@ -125,13 +136,19 @@ const GameDetails = () => {
       </section>
 
       <section className="py-10 bg-slate-950 ">
-        <div className="container flex flex-col items-center mx-auto mb-12 md:p-10 md:px-12">
+        <div
+          data-aos="fade-in"
+          className="container flex flex-col items-center mx-auto mb-12 md:p-10 md:px-12"
+        >
           <h2 className="p-4 text-4xl font-semibold leadi text-center">
             What our customers are saying about this game
           </h2>
         </div>
         <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10">
-          <div className="grid md:grid-cols-2 gap-5 md:gap-0 shadow-lg">
+          <div
+            data-aos="fade-up"
+            className="grid md:grid-cols-2 gap-5 md:gap-0 shadow-lg"
+          >
             {reviews.map((review, index) => (
               <Review key={index} review={review} />
             ))}

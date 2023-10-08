@@ -1,19 +1,31 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import FeaturedCollection from "../../Components/FeaturedCollection/FeaturedCollection";
 import ServiceGrid from "../../Components/Services/ServiceGrid";
-import Blog from "../Blog/Blog";
 import Events from "./Events/Events";
 import Slider from "./Slider/Slider";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+    });
+  }, []);
   return (
     <>
-      <section className="[&>div]:!h-full sm:[&>div]:!h-[70vh]">
+      <section
+        data-aos="fade-in"
+        className="[&>div]:!h-full sm:[&>div]:!h-[70vh]"
+      >
         <Slider />
       </section>
 
       <section className="py-20 px-5">
         <div className="container mx-auto">
-          <div className="section-title text-center">
+          <div data-aos="fade-in" className="section-title text-center">
             <h2 className="text-3xl md:text-5xl font-semibold uppercase text-white">
               Our <span className="text-primary">Ser</span>vices
             </h2>
@@ -24,13 +36,15 @@ const Home = () => {
               enthusiast, we have something special in store for you.
             </p>
           </div>
-          <ServiceGrid />
+          <div>
+            <ServiceGrid />
+          </div>
         </div>
       </section>
 
-      <section className="py-20 bg-base-200 px-5">
+      <section className="py-20 bg-base-200 px-5 overflow-hidden">
         <div className="container mx-auto">
-          <div className="section-title text-center">
+          <div data-aos="fade-right" className="section-title text-center">
             <h2 className="text-3xl md:text-5xl font-semibold uppercase text-white">
               Upcoming<span className="text-primary"> Events</span>
             </h2>
@@ -42,17 +56,23 @@ const Home = () => {
               your calendar for gaming greatness!
             </p>
           </div>
-          <Events />
-          <div className="text-center pt-10 space-y-3">
-            <h4 className="text-2xl">Subscribe for next events update!</h4>
-            <div className="join justify-center flex-col md:flex-row gap-2 md:gap-0">
-              <input
-                className="input w-full block md:w-auto md:inline-block input-bordered rounded-lg md:rounded-none md:join-item "
-                placeholder="Email"
-              />
-              <button className="btn w-full block md:w-auto md:inline-block bg-secondary hover:bg-secondary text-black md:join-item md:rounded-r-full rounded-lg">
-                Subscribe
-              </button>
+          <div
+            data-aos="fade-left"
+            data-aos-offset="220"
+            data-aos-duration="600"
+          >
+            <Events />
+            <div className="text-center pt-10 space-y-3">
+              <h4 className="text-2xl">Subscribe for next events update!</h4>
+              <div className="join justify-center flex-col md:flex-row gap-2 md:gap-0">
+                <input
+                  className="input w-full block md:w-auto md:inline-block input-bordered rounded-lg md:rounded-none md:join-item "
+                  placeholder="Email"
+                />
+                <button className="btn w-full block md:w-auto md:inline-block bg-secondary hover:bg-secondary text-black md:join-item md:rounded-r-full rounded-lg">
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -60,7 +80,7 @@ const Home = () => {
 
       <section className="py-20 px-5">
         <div className="container mx-auto">
-          <div className="section-title text-center">
+          <div data-aos="fade-in" className="section-title text-center">
             <h2 className="text-3xl md:text-5xl font-semibold uppercase text-white">
               Featu<span className="text-primary">red</span> collection
             </h2>
@@ -71,13 +91,15 @@ const Home = () => {
               get started on your gaming adventure.
             </p>
           </div>
-          <FeaturedCollection />
+          <div data-aos="fade-up">
+            <FeaturedCollection />
+          </div>
         </div>
       </section>
 
-      <section className="bg-base-200">
+      <section className="bg-base-200 overflow-hidden">
         <div className="container flex flex-col items-center px-4 py-12 mx-auto xl:flex-row">
-          <div className="flex justify-center xl:w-1/2">
+          <div data-aos="fade-right" className="flex justify-center xl:w-1/2">
             <img
               className="h-80 w-80 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover rounded-full"
               src="https://images.unsplash.com/photo-1532295454114-d7bc89024613"
@@ -85,8 +107,14 @@ const Home = () => {
             />
           </div>
 
-          <div className="flex flex-col items-center mt-6 xl:items-start xl:w-1/2 xl:mt-0">
-            <h2 className="text-3xl md:text-5xl font-semibold uppercase text-white">
+          <div
+            data-aos="fade-left"
+            className="flex flex-col items-center mt-6 xl:items-start xl:w-1/2 xl:mt-0"
+          >
+            <h2
+              data-aos="fade-in"
+              className="text-3xl md:text-5xl font-semibold uppercase text-white"
+            >
               Download our <br />
               <span className="text-primary">mobile</span> app
             </h2>
@@ -164,17 +192,23 @@ const Home = () => {
 
       <section className="relative flex overflow-hidden">
         <div className="w-full h-full absolute top-0 -z-50 flex">
-          <div className="h-full md:w-3/4"></div>
-          <div className="h-full bg-stone-950 md:w-2/5"></div>
+          <div
+            data-aos="fade-right"
+            className="h-full bg-stone-950 md:w-3/4"
+          ></div>
         </div>
 
         <div className="flex flex-col justify-center w-full px-4 py-10 md:mx-24">
           <h2 className="text-3xl md:text-5xl font-semibold uppercase text-white">
-            What our <span className="text-primary">customers</span> <br className="hidden md:block" />
+            What our <span className="text-primary">customers</span>{" "}
+            <br className="hidden md:block" />
             are saying
           </h2>
 
-          <div className="grid w-full grid-cols-1 gap-8 mt-8 2xl:grid-cols-4 lg:mt-16 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            data-aos="fade-in"
+            className="grid w-full grid-cols-1 gap-8 mt-8 2xl:grid-cols-4 lg:mt-16 md:grid-cols-2 lg:grid-cols-3"
+          >
             <div className="w-full p-8 bg-white rounded-md shadow-lg dark:bg-gray-800">
               <p className="leading-loose text-gray-500 dark:text-gray-400">
                 "I've been a gamer for years, and this gaming service has truly
