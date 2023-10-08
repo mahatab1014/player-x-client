@@ -1,11 +1,12 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import ServiceModal from "../../Components/DaisyUi/ServiceModal";
 
 const Service = () => {
   const data = useLoaderData();
   const { id } = useParams();
   const exactData = data.find((service) => service._slug === id);
   const { title, long_description, price, image } = exactData;
-
+  
   return (
     <section>
       <div className="container mx-auto md:py-10 ">
@@ -18,13 +19,18 @@ const Service = () => {
             <p>{long_description}</p>
             <div className="flex items-center gap-5">
               <span>$ {price}</span>
-              <button className="btn btn-sm border-none bg-secondary hover:bg-secondary text-black hover:text-black  rounded-none">
+
+              <button
+                onClick={() => document.getElementById("purchase").showModal()}
+                className="btn btn-sm border-none bg-secondary hover:bg-secondary text-black hover:text-black  rounded-none"
+              >
                 Purchase
               </button>
             </div>
           </div>
         </article>
       </div>
+      <ServiceModal data={exactData} />
     </section>
   );
 };
