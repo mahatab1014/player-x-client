@@ -13,6 +13,8 @@ import Shop from "../Pages/Shop/Shop";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import Hide_Auth_Routes from "./Hide_Auth_Routes";
 import Profile from "../Pages/Profile/Profile";
+import Blog from "../Pages/Blog/Blog";
+import BlogDetails from "../Pages/Blog/BlogDetails";
 
 const Public_Routes = createBrowserRouter([
   {
@@ -79,7 +81,17 @@ const Public_Routes = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <Profile />
+        element: <Profile />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+        loader: () => fetch("/data/blog.json"),
+      },
+      {
+        path: "/blog/:id",
+        element: <BlogDetails />,
+        loader: () => fetch("/data/blog.json"),
       },
       {
         path: "*",
