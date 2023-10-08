@@ -11,7 +11,7 @@ const BlogCard = ({ blog }) => {
       <div className="card-body">
         <h2 className="text-2xl">{title}</h2>
         <p>
-          {details[0].slice(0, 110)}.....
+          {details[0]?.slice(0, 110)}.....
           <Link to={`/blog/${_slug}`} className=" text-blue-400 underline">
             Read More
           </Link>
