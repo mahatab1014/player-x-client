@@ -81,7 +81,11 @@ const Public_Routes = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <Profile />,
+        element: (
+          <Private_Routes>
+            <Profile />
+          </Private_Routes>
+        ),
       },
       {
         path: "/blog",

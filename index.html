@@ -10,9 +10,17 @@
       type="image/x-icon"
     />
     <title>Player X</title>
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
   </head>
   <body class="font-rubik">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="https://unpkg.com/kursor"></script>
+    <script>
+      new kursor({
+        type: 4,
+        color: "#ffc30f",
+      });
+    </script>
   </body>
 </html>
