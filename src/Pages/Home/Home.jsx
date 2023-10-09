@@ -98,10 +98,10 @@ const Home = () => {
       </section>
 
       <section className="bg-base-200 overflow-hidden">
-        <div className="container flex flex-col items-center px-4 py-12 mx-auto xl:flex-row">
+        <div className="container flex flex-col items-center px-5 py-12 mx-auto xl:flex-row">
           <div data-aos="fade-right" className="flex justify-center xl:w-1/2">
             <img
-              className="h-80 w-80 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover rounded-full"
+              className="h-80 w-80 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover rounded-xl"
               src="https://images.unsplash.com/photo-1532295454114-d7bc89024613"
               alt=""
             />
@@ -119,7 +119,7 @@ const Home = () => {
               <span className="text-primary">mobile</span> app
             </h2>
 
-            <p className="block font-light text-lg max-w-2xl mt-4 text-gray-500 dark:text-gray-300">
+            <p className="block font-light text-lg mt-4 text-gray-500 dark:text-gray-300">
               Experience the ultimate convenience with our free mobile app.
               Download it now to unlock a world of possibilities right at your
               fingertips. Our app is designed to make your life easier and more
@@ -130,7 +130,7 @@ const Home = () => {
               experience—download our app today and see what awaits!
             </p>
 
-            <div className="mt-6 sm:-mx-2 flex gap-2">
+            <div className="mt-6 sm:-mx-2 flex flex-wrap gap-2">
               <button className="custom-button flex items-center">
                 <svg
                   className="w-8 h-8 mx-2 fill-current"
