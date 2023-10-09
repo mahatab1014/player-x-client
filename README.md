@@ -1,8 +1,40 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# PlayerX: Your Destination for Gaming Excellence
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+PlayerX is your go-to destination for all things gaming. As a leading provider of gaming-related services, we offer an extensive range of gaming experiences, from top-tier titles to exclusive in-game content. Whether you're an avid gamer looking for the latest releases or a developer seeking innovative gaming solutions, PlayerX has you covered. Dive into the world of gaming excellence with us and elevate your gaming experience to new heights.
+
+
+
+
+
+
+
+
+
+## Tech Stack
+
+**Client:** React, React Router, TailwindCSS, DaisyUi, Firebase
+
+**Server:** Node, Express
+
+
+## Features
+
+- AOS Animatioan
+- Password Validation
+- One Click Login with (Google & Facebook)
+
+
+## Screenshots
+
+![App Screenshot](https://i.ibb.co/PGXkDKm/Screenshot-43.png)
+
+![App Screenshot](https://i.ibb.co/PGXkDKm/Screenshot-44.png)
+
+![App Screenshot](https://i.ibb.co/PGXkDKm/Screenshot-45.png)
+
+![App Screenshot](https://i.ibb.co/PGXkDKm/Screenshot-46.png)
+
+![App Screenshot](https://i.ibb.co/PGXkDKm/Screenshot-47.png)
