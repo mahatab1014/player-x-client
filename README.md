@@ -31,10 +31,10 @@ PlayerX is your go-to destination for all things gaming. As a leading provider o
 
 ![App Screenshot](https://i.ibb.co/PGXkDKm/Screenshot-43.png)
 
-![App Screenshot](https://i.ibb.co/PGXkDKm/Screenshot-44.png)
+![App Screenshot](https://i.ibb.co/GR22sts/Screenshot-44.png)
 
-![App Screenshot](https://i.ibb.co/PGXkDKm/Screenshot-45.png)
+![App Screenshot](https://i.ibb.co/6vF4M38/Screenshot-45.png)
 
-![App Screenshot](https://i.ibb.co/PGXkDKm/Screenshot-46.png)
+![App Screenshot](https://i.ibb.co/StL7h7j/Screenshot-46.png)
 
-![App Screenshot](https://i.ibb.co/PGXkDKm/Screenshot-47.png)
+![App Screenshot](https://i.ibb.co/T2gJ70D/Screenshot-47.png)
